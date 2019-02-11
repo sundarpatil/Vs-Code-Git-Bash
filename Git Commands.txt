@@ -1,3 +1,6 @@
+//-------------------------------------------------------------------------------
+Set Up and Inintialize Git/GitHub
+//-------------------------------------------------------------------------------
 git init        (Addds git metadata to current hidden folder .git)
 cd .git         (You can go inside .git folder by command line)
 ls              (List all objects in current directory)
@@ -10,3 +13,16 @@ echo "# text" >> README.md
 git push -u                     (push to Git Server)
 
 // Sequence to be executed (   GIT ADD . | GIT COMMIT -m "COMMENT" | GIT PUSH -u ).
+
+
+
+
+//-------------------------------------------------------------------------------
+Git/GitHub Day Today Commnads
+//-------------------------------------------------------------------------------
+  git status              
+                (Files are either tracked or untracked)
+                Tracked files will be one of three states
+                -- Commited - unmodified changes from the last commit snapshot
+                -- Modified - changes made to files since last commit snapshot
+                -- Staged   - changes marked to be added into the next commit snapshot.
