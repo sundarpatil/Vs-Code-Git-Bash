@@ -20,9 +20,55 @@ git push -u                     (push to Git Server)
 //-------------------------------------------------------------------------------
 Git/GitHub Day Today Commnads
 //-------------------------------------------------------------------------------
-  git status              
+git status              
                 (Files are either tracked or untracked)
                 Tracked files will be one of three states
                 -- Commited - unmodified changes from the last commit snapshot
                 -- Modified - changes made to files since last commit snapshot
                 -- Staged   - changes marked to be added into the next commit snapshot.
+
+git status -s
+git diff
+
+
+//-------------------------------------------------------------------------------
+Extended Git/GitHub Day Today Commnads
+//-------------------------------------------------------------------------------
+
+git push
+git push origin master
+
+git log
+git log -1
+git log -5
+git log --oneline
+git log --stat
+git log --patch
+
+
+
+ls
+git rm untracked.txt    (Remove from git trakking and from repository local + remote.)
+ls
+git rm untracked.txt    (Remove from git trakking and from remote repository but not from local store.)
+ls
+git status
+git mv renamefile.txt untracked.txt
+
+
+------------newbranch---------------------------
+git checkout -b newbranch
+
+git commit -m "rename Readme.md"
+(add new file to working dir) -- add this file like below
+git add .                     -- this file is not commited 
+
+git stash
+git stash list
+git stash show
+-------------------------------------------------
+
+------------masterbranch-------------------------
+
+git checkout master
+
