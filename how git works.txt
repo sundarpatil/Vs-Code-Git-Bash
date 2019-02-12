@@ -1,0 +1,15 @@
+echo "Apple Pie"
+git hash-object                                               (Everything in git has SHA1 hash value)
+echo "Apple Pie " | git hash-object --stdin
+
+git cat-file 23991897e13e47ed0adb91a0082c31c82fe0cbe5 -t      (show object type)
+git cat-file c7b0102f4caaf16ea95ba5ed4d18f1e6f2caa3 -p        (pretty-print object's content)
+
+git branch
+git branch -a       (list branch all remote and local)
+git branch -r       (list branch remote)
+git branch -l       (list branch local)
+
+
+git branch -d [branch_name]        (delete branch local)
+

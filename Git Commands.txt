@@ -4,6 +4,7 @@ Set Up and Inintialize Git/GitHub
 git init        (Addds git metadata to current hidden folder .git)
 cd .git         (You can go inside .git folder by command line)
 ls              (List all objects in current directory)
+ls -a           (hidden directory)   
 cd ..
 git add --all/git add .         (Local Repository Add)
 git commit -m "FIRST COMMIT"    (Local Repository Commit)

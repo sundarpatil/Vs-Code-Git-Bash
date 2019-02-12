@@ -1,0 +1,89 @@
+With Azure Boards => create work item (unique ID), work item types => user epics | features | stories | tasks | bugs (as Agile process provides)
+                    epics - significant business initiatives
+                    features - set of work
+                    user stories - work that assign to specific team members
+                    tasks - even smaller amounts of work for which you want to track time either in hours or days
+                    bugs - defects
+
+Works progresses => Status of work item => New | Active | Resolved | Closed
+
+Kanban Boards (New, Active, Resolved, and Closed)
+    Collaborate (Discussion-tagging, dashboards-status, notifications-status change, follow specific issues)
+
+
+Scrum sprints   
+    Plan work to current or future sprints
+    Forecast work that can get completed based on effort estimates
+    Determine how much work can be done within a sprint
+    Bulk assign issues and tasks to team members in sprints
+
+    Work --- Organize work into a hierarchy         
+            Epic 
+             -> Features (Product Backlog Item + User Story + Task)
+               -----------------------------------------------------
+               |                                                   |
+               |  -> Sprint Iteration =>                           |
+               |      -> User Story                                |
+               |          -> Task (+ Bug Configurable)             |
+               |                                                   |
+               -----------------------------------------------------
+
+
+Tool for the job
+Boards  : visual view + flow => work items as cards similar to sticky notes. i.e. -> associated project & team
+          Kanban board => (Stories, Features, and Epics) => track requirements & sprint-independent
+          Sprint Taskboard => sprint associated -> tracking tasks defined -> monitor progress (capacity charts | burndown chart)
+
+
+
+Backlogs: work items as lists i.e. represents project plan + future work + information for team | organize as prioritity + hierarchy
+          Roadmap 4 plans to deliver | organize i.e. prioritity + hierarchy list of features & requirements
+          Organize, Assign, Track Work | team always knows what next
+          (bugs : Scrum default => bugs along with product backlog.)
+          Ideas into backlog or stories
+          priority order | details and estimates
+        
+            Effort Story Points : For user stories and requirements capture estimates in Story Points and Size
+                                  Agile methods recommend set estimates based on relative size of work
+                                  Fibonacci sequence i.e. powers of 2 (1, 2, 3, 5, 8, etc.) 
+
+            Business Value      : captures priority value for Product Backlog Item(PBI) relatively compared to other PBIs
+                                  higher the number, the greater the business value
+
+
+Implement Scrum   : Define Sprint => Plan Sprint => Monitor Sprint progress => Forcast for future.
+
+Sprints:  
+          Choose backlog wogitrk item to an iteration
+          Team builds sprint backlog during sprint planning meeting, typically first day of sprint
+          Each sprint corresponds to a time-boxed interval
+          During the planning meeting, product owner works with team to identify stories/backlog to complete in sprint
+
+          Taskboards            : Filtered view of work item assigned in specific iteration (stories, tasks, +bugs)
+                                  
+          Set sprint capacity   : Determine team's actual capacity | capacity correlates to actual task time
+                                  Takes into consideration work hours by team members + non-working days
+                                  Days/time available for each member can vary from sprint to sprint
+                
+                                        Set capacity for sprint 
+                                        Copy capacity from previous sprint 
+                                        Track capacity when performing multiple activities
+                                        Add or remove user accounts from capacity planning
+                                        Track capacity when working on more than one team
+
+          Team velocity chart   : help to determine work capacity from sprint-over-sprint
+                                  chart only available for backlog and based on sum of estimates made to Effort
+
+          Forecast Tool         : Once team completed 1 or 2 sprint, team-specific, team ability
+                                  Forecast tool to help in their sprint planning. using values of team velocity
+                                  Forecast tool will show which items in backlog can be completed within future sprint
+
+
+Queries: are filtered lists of work
+
+
+
+
+
+
+
