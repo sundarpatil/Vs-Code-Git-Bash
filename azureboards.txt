@@ -80,10 +80,3 @@ Sprints:
 
 
 Queries: are filtered lists of work
-
-
-
-
-
-
-
