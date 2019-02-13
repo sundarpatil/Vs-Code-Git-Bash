@@ -15,7 +15,7 @@ git push -u                     (push to Git Server)
 
 // Sequence to be executed (   GIT ADD . | GIT COMMIT -m "COMMENT" | GIT PUSH -u ).
 
-
+git clone "gir repository url"
 
 
 //-------------------------------------------------------------------------------
@@ -45,7 +45,6 @@ git log -5
 git log --oneline
 git log --stat
 git log --patch
-
 
 
 ls
