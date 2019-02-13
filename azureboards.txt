@@ -27,6 +27,17 @@ Scrum sprints
                |                                                   |
                -----------------------------------------------------
 
+                Workflow states
+                    New | Approved | Committed | Done | Removed
+                Product planning
+                    Product backlog item | Bug (optional)
+                Portfolio backlogs
+                    Epic | Feature | User Story
+                Sprint planning
+                    User Story | Task | Bug 
+                
+
+
 Tool for the job
 Boards  : visual view + flow => work items as cards similar to sticky notes. i.e. -> associated project & team
           Kanban board => (Stories, Features, and Epics) => track requirements & sprint-independent
@@ -75,6 +86,10 @@ Sprints:
           Forecast Tool         : Once team completed 1 or 2 sprint, team-specific, team ability
                                   Forecast tool to help in their sprint planning. using values of team velocity
                                   Forecast tool will show which items in backlog can be completed within future sprint
+          
+          Burndown              : 1) Team's total capacity at the start of the sprint
+                                  2) 0 Remaining Work at the end of the sprint.
+
 
 
 Queries: are filtered lists of work
