@@ -1,15 +1,14 @@
 With Azure Boards => create work item (unique ID), work item types => user epics | features | stories | tasks | bugs (as Agile process provides)
-                    epics - significant business initiatives
+                    epics    - significant business initiatives
                     features - set of work
                     user stories - work that assign to specific team members
-                    tasks - even smaller amounts of work for which you want to track time either in hours or days
-                    bugs - defects
+                    tasks    - even smaller amounts of work for which you want to track time either in hours or days
+                    bugs     - defects
 
 Works progresses => Status of work item => New | Active | Resolved | Closed
 
 Kanban Boards (New, Active, Resolved, and Closed)
     Collaborate (Discussion-tagging, dashboards-status, notifications-status change, follow specific issues)
-
 
 Scrum sprints   
     Plan work to current or future sprints
@@ -27,7 +26,6 @@ Scrum sprints
                |          -> Task (+ Bug Configurable)             |
                |                                                   |
                -----------------------------------------------------
-
 
 Tool for the job
 Boards  : visual view + flow => work items as cards similar to sticky notes. i.e. -> associated project & team

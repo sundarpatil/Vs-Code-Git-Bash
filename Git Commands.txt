@@ -1,6 +1,61 @@
-//-------------------------------------------------------------------------------
+//  What is the difference between Git and GitHub?
+//  -> Git is a Git is known as a "distributed" (rather than "centralized") version control system.
+//     It keeps track of your files and modifications to those files in a "repository" (or "repo"), 
+//     but only when you tell it to do so. (In other words, you decide which files to track and 
+//     when to take a "snapshot" of any modifications.) 
+//  
+//     In contrast, GitHub is website that allows to publish Git repositories online, useful (see #3)
+//  
+//  Is Git saving every repository locally (in the user's machine) and in GitHub?
+//  -> Git is known as a "distributed" (rather than "centralized") version control system because you 
+//     can run it locally and disconnected from the Internet, and then "push" your changes to a remote
+//     system (such as GitHub) whenever you like. Thus, repo changes only appear on GitHub when you 
+//     manually tell Git to push those changes.
+//  
+//  Can you use Git without GitHub? If yes, what would be the benefit for using GitHub?
+//  ->  Yes, Git without GitHub ueable. Git is the "workhorse" program that actually tracks  changes, 
+//      whereas GitHub is simply hosting repositories (and provides additional functionalitynot available
+//      in Git). Here are some of the benefits of using GitHub
+//         * It provides a backup of your files.
+//         * It gives you a visual interface for navigating your repos.
+//         * It gives other people a way to navigate your repos.
+//         * It makes repo collaboration easy (e.g., multiple people contributing to the same project).
+//         * It provides a lightweight issue tracking system.
+//
+//  How does Git compare to a backup system such as Time Machine?
+//  ->  Git does backup your files, though it gives you much more granular control than a traditional 
+//      backup system over what and when you backup. Specifically, you "commit" every time you want 
+//      to take a snapshot of changes, and that commit includes both a description of your changes and 
+//      the line-by-line details of those changes. This is optimal for source code because you can easily 
+//      see the change history for any given file at a line-by-line level.
+//      
+//  Is this a manual process, in other words if you don't commit you won't have a new version of the changes made?
+//  ->  Yes, this is a manual process.
+//      
+//  If are not collaborating and you are already using a backup system why would you use Git?
+//      * Git employs a powerful branching system that allows you to work on multiple, independent 
+//        lines of development simultaneously and then merge those branches together as needed.
+//      * Git allows you to view the line-by-line differences between different versions of your files, 
+//        which makes troubleshooting easier.
+//      * Git forces you to describe each of your commits, which makes it significantly easier to track 
+//        down a specific previous version of a given file (and potentially revert to that previous version).
+//      * If you ever need help with your code, having it tracked by Git and hosted on GitHub makes it 
+//        much easier for someone else to look at your code.
+//      
+//   ____________________________________________________________________________________________________
+//   * Unlike once popular centralized version control systems, DVCSs like Git don’t need a constant connection
+//     to a central repository. Developers can work anywhere and collaborate asynchronously from any time zone.
+//   * most-used VCS -> 70% of developers | open source and commercial
+//   * entire timeline of their changes, decisions, and progression of any project in one place
+//   
+//   
+//   
+//   
+//   
+//   
+//_________________________________________________________________________________________________________
 Set Up and Inintialize Git/GitHub
-//-------------------------------------------------------------------------------
+//_________________________________________________________________________________________________________
 git init        (Addds git metadata to current hidden folder .git)
 cd .git         (You can go inside .git folder by command line)
 ls              (List all objects in current directory)
@@ -18,9 +73,9 @@ git push -u                     (push to Git Server)
 git clone "gir repository url"
 
 
-//-------------------------------------------------------------------------------
+//_________________________________________________________________________________________________________
 Git/GitHub Day Today Commnads
-//-------------------------------------------------------------------------------
+//_________________________________________________________________________________________________________
 git status              
                 (Files are either tracked or untracked)
                 Tracked files will be one of three states
@@ -32,9 +87,9 @@ git status -s
 git diff
 
 
-//-------------------------------------------------------------------------------
+//_________________________________________________________________________________________________________
 Extended Git/GitHub Day Today Commnads
-//-------------------------------------------------------------------------------
+//_________________________________________________________________________________________________________
 
 git push
 git push origin master
@@ -56,19 +111,29 @@ git status
 git mv renamefile.txt untracked.txt
 
 
-------------newbranch---------------------------
-git checkout -b newbranch
+____________newbranch______________________________________________________________________________________
+git checkout -b newbranch   (New Branch will be created from HEAD branch or current branch
 
 git commit -m "rename Readme.md"
 (add new file to working dir) -- add this file like below
 git add .                     -- this file is not commited 
+_____________________________
+|                           |
+|   git stash               |
+|   git stash list          |  Look into these later on
+|   git stash show          |
+|___________________________|
+____________________________________________________________________________________________________________
 
-git stash
-git stash list
-git stash show
--------------------------------------------------
-
-------------masterbranch-------------------------
+____________Master Branch____________________________________________________________________________________
 
 git checkout master
+
+____________Delete Branch________________________________________________________________________________________________
+// branch must me available at your local to delete it
+// you can delete branch from other (parent) branch
+
+git branch -d BranchName                //Locatl Delete
+
+git push origin :newbranch              //Remote Delete
 
