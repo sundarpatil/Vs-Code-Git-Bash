@@ -5,8 +5,8 @@
 * Type Forwording to make dll portable across .Net frameworks.
 
 When choosing a .NET Standard version, you should consider this trade-off:
-*  The higher the version, the more APIs are available to you.
-*  The lower the version, the more platforms implement it.
+*     The higher the version, the more APIs are available to you.
+*     The lower the version, the more platforms implement it.
 
 You find the highest .NET Standard version you can target -> repeat following steps
 1)    Target the next lower version of .NET Standard and build your project.

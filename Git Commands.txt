@@ -42,20 +42,23 @@
 //      * If you ever need help with your code, having it tracked by Git and hosted on GitHub makes it 
 //        much easier for someone else to look at your code.
 //      
-//   ____________________________________________________________________________________________________
+//__________________________________________________________________________________________________________
 //   * Unlike once popular centralized version control systems, DVCSs like Git don’t need a constant connection
 //     to a central repository. Developers can work anywhere and collaborate asynchronously from any time zone.
 //   * most-used VCS -> 70% of developers | open source and commercial
 //   * entire timeline of their changes, decisions, and progression of any project in one place
-//   
-//   
-//   
-//   
-//   
-//   
-//_________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+__________________________________________________________________________________________________________
 Set Up and Inintialize Git/GitHub
-//_________________________________________________________________________________________________________
+//__________________________________________________________________________________________________________
 git init        (Addds git metadata to current hidden folder .git)
 cd .git         (You can go inside .git folder by command line)
 ls              (List all objects in current directory)
@@ -72,11 +75,10 @@ git push -u                     (push to Git Server)
 
 git clone "gir repository url"
 
-
-//_________________________________________________________________________________________________________
+//__________________________________________________________________________________________________________
 Git/GitHub Day Today Commnads
-//_________________________________________________________________________________________________________
-git status              
+//__________________________________________________________________________________________________________
+git status              _
                 (Files are either tracked or untracked)
                 Tracked files will be one of three states
                 -- Commited - unmodified changes from the last commit snapshot
@@ -87,9 +89,9 @@ git status -s
 git diff
 
 
-//_________________________________________________________________________________________________________
+//__________________________________________________________________________________________________________
 Extended Git/GitHub Day Today Commnads
-//_________________________________________________________________________________________________________
+//__________________________________________________________________________________________________________
 
 git push
 git push origin master
@@ -111,25 +113,35 @@ git status
 git mv renamefile.txt untracked.txt
 
 
-____________newbranch______________________________________________________________________________________
+____________newbranch_______________________________________________________________________________________
 git checkout -b newbranch   (New Branch will be created from HEAD branch or current branch
 
 git commit -m "rename Readme.md"
 (add new file to working dir) -- add this file like below
 git add .                     -- this file is not commited 
-_____________________________
-|                           |
-|   git stash               |
-|   git stash list          |  Look into these later on
-|   git stash show          |
-|___________________________|
+
+
+____________stash___________________________________________________________________________________________
+Cases where deveoper need to work on multiple branches(master, x, y), where deveoper will need to switch branches 
+   now developer inbetween work so he can not commit it on current branch. 
+   so files can be STASH by Git and can be recover later on.
+
+git add .                 add files into current repository locally 
+git stash                 This command responses with saving current non commited files locally without commit with work in progress state
+                          [Stash] command makes our working [dir]  clean 
+git stash list            [Stash List] command lists files which are stashed workin progress state
+git stash show            better detailed view which files have been stashed and overview of the changes
+git stash pop             stashed files will be copied to current dir
+
+Deveoper can switch branches with stashing current work.
+
 ____________________________________________________________________________________________________________
 
-____________Master Branch____________________________________________________________________________________
+____________Master Branch___________________________________________________________________________________
 
 git checkout master
 
-____________Delete Branch________________________________________________________________________________________________
+____________Delete Branch___________________________________________________________________________________
 // branch must me available at your local to delete it
 // you can delete branch from other (parent) branch
 
@@ -137,3 +149,34 @@ git branch -d BranchName                //Locatl Delete
 
 git push origin :newbranch              //Remote Delete
 
+____________Merge Branch___________________________________________________________________________________
+
+Merging branches is key concept in git and gitHub, HEAD is crutioal to merge in commandline
+
+
+git merge newbranch 
+
+
+
+
+
+____________________________________________________________________________________________________________
+============================================================================================================
+[Tool VIM] 
+This is command line interactive tool to interact after certan GIT COMMANDS. 
+Like -> How do I save the message and close vim?
+        In vim, you save a file with [:] [w] [Enter] while in the normal mode (you get to the normal mode by pressing [Esc]).
+        You close your file with [:] [q] while in the normal mode.
+
+        You can combine both these actions and do [Esc] [:] [w] [q] [Enter] to save the commit and quit vim.
+
+        As an alternate to the above, you can also press [Z] [Z] while in the normal mode, which will save the file and 
+        exit vim. This is also easier for some people as it's the same key pressed twice.
+
+
+        i -> for interactive mode.
+
+Read    -> https://scotch.io/tutorials/getting-started-with-vim-an-interactive-guide
+Commands-> http://www.fprintf.net/vimCheatSheet.html
+____________________________________________________________________________________________________________
+============================================================================================================
